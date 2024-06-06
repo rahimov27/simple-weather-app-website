@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather-website</title>
+</head>
+<body>
+    <img id="image" src="" alt="">
+    <!-- Header -->
+    <header></header>
+
+    <!-- Navbar -->
+    <nav>
+        <li>Main page</li>
+        <li>Contact page</li>
+        <li>About us</li>
+    </nav>
+
+    <!-- Section -->
+    <section>
+        <div class="container">
+            <div class="block">
+                <input id="search-input" placeholder="Enter city name..." type="text">
+                <button onclick="fetchData()" class="search-btn">
+                    <img src="images/icon/Vector.svg" alt="">
+                </button>
+                <div class="time-block">
+                    <p id="time">Time in Berlin 16:47:10</p>
+                </div>
+            </div>
+
+            <div class="main-part">
+                <div class="city-info-row">
+                    <h3 id="city-name">Berlin</h3>
+                    <h5>Data for 21:00</h5>
+                </div>
+                <div class ="temperature-info-row">
+                    <h3 id="temp">+11</h3>
+                    <img src="/images/02d@2x 1.svg" alt="">
+                </div>
+                <p id="feels-like">Слегка облачно, ощущается как +10°</p>
+
+                <div class="big-block">
+                    <div class="left-column">
+                        <div class="temp-full-info">
+                            <p>Speed wind</p>
+                            <p id="speed-wind">0.62 м/c</p>
+                        </div>
+                        <div class="temp-full-info">
+                            <p>Pressure</p>
+                            <p id="pressure">1.2 м/c</p>
+                        </div>
+                        <div class="temp-full-info">
+                            <p>Humidity</p>
+                            <p id="humidity">32 %</p>
+                        </div>
+                        <div class="temp-full-info">
+                            <p>Temperature min</p>
+                            <p id="temp_min">32 %</p>
+                        </div>
+                    </div>
+                    <div class="right-column">
+                        <div class="temp-full-info">
+                            <p>Temperature max</p>
+                            <p id="temp_max">32 %</p>
+                        </div>
+                        <div class="temp-full-info">
+                            <p>Rain</p>
+                            <p id="rain">0.25</p>
+                        </div>
+                        <div class="temp-full-info">
+                            <p>Weather</p>
+                            <p id="weather">light-rain</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-part">
+                <h5>Прогноз на каждые 3 часа</h5>
+
+                <div class="cloud-row">
+                    <button><img src="/images/icon/arrowForward.svg" alt="arrow-left"></button>
+                    <button><img src="/images/icon/icon/arrow-right.svg" alt="arrow-right"></button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <script src="index.js"></script>
+</body>
+</html>
